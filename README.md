@@ -1,5 +1,3 @@
-Markdown
-
 #  Sophy Chat App
 
 Modern ve kullanıcı dostu bir chat arayüzü uygulaması. React, Vite ve Tailwind CSS kullanılarak geliştirilmiş, gerçek zamanlı mesajlaşma deneyimi sunan bir case study projesi.
@@ -51,7 +49,7 @@ sophy-chat-app/
 │   └── components/
 │       ├── Sidebar.jsx      # Konuşma listesi ve arama bileşeni
 │       └── ChatPanel.jsx    # Mesaj görüntüleme ve gönderme bileşeni
- Ana Bileşenler
+  Ana Bileşenler
 App.jsx - Merkezi State Yönetimi
 Tüm uygulama state'lerini yönetir (conversations, selectedConversationId, loading)
 
@@ -84,31 +82,31 @@ getMessages(conversationId) - Mesajları getirme
 
 sendMessage(conversationId, messageContent) - Mesaj gönderme ve otomatik cevap
 
-Öne Çıkan Özellikler (Bonuslar)
- Kullanıcı Dostu Arama Çubuğu
+  Öne Çıkan Özellikler (Bonuslar)
+  Kullanıcı Dostu Arama Çubuğu
 Client-side filtering: Konuşma başlıklarına göre anlık arama
 
 useMemo hook'u ile performans optimizasyonu
 
- Optimistic UI ile Anlık Mesaj Gönderme
+  Optimistic UI ile Anlık Mesaj Gönderme
 Kullanıcı mesajı gönderilir gönderilmez UI'da görünür
 
 Backend yanıtı beklenmeden anında geri bildirim sağlanır
 
- Skeleton Loading ile Modern Yükleme Ekranı
+  Skeleton Loading ile Modern Yükleme Ekranı
 Gri renkli, titreyen (animate-pulse) yükleme animasyonları
 
 Kullanıcıya içerik yüklenirken görsel geri bildirim
 
- Okunmamış Mesaj Bildirimleri (Badges)
+  Okunmamış Mesaj Bildirimleri (Badges)
 Kırmızı yuvarlak badge ile görsel bildirim
 
 Konuşma seçildiğinde otomatik sıfırlama
 
- Otomatik Bot Cevabı
+  Otomatik Bot Cevabı
 Kullanıcı mesajından 1 saniye sonra otomatik assistant cevabı simülasyonu
 
- Bu Projeyi Nasıl Yaptım? (Teknik Açıklama)
+  Bu Projeyi Nasıl Yaptım? (Teknik Açıklama)
 Backend Simülasyonu: Promise ve setTimeout
 Backend entegrasyonu olmadığı için, gerçekçi bir asenkron API deneyimi oluşturmak amacıyla Promise ve setTimeout kullanarak bir Mock API servisi geliştirdim. Bu yaklaşım, gerçek API çağrılarındaki ağ gecikmesini (network latency) simüle etmemi sağladı.
 
